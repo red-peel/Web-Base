@@ -1,0 +1,29 @@
+{
+  "name": "mit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/ -d lib/ --ignore __tests__/*",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-flow": "^7.17.12",
+    "eslint": "^8.16.0",
+    "flow-bin": "^0.179.0",
+    "global-jsdom": "^8.4.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "jsdom": "^19.0.0"
+  }
+}
